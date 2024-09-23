@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/arbab/static/css/main.5504326f.chunk.css",
+    "main.js": "/arbab/static/js/main.0721603f.chunk.js",
+    "main.js.map": "/arbab/static/js/main.0721603f.chunk.js.map",
+    "runtime-main.js": "/arbab/static/js/runtime-main.12d46441.js",
+    "runtime-main.js.map": "/arbab/static/js/runtime-main.12d46441.js.map",
+    "static/js/2.9c6d3b9d.chunk.js": "/arbab/static/js/2.9c6d3b9d.chunk.js",
+    "static/js/2.9c6d3b9d.chunk.js.map": "/arbab/static/js/2.9c6d3b9d.chunk.js.map",
+    "index.html": "/arbab/index.html",
+    "precache-manifest.148bf5ae2bfd3319025184b5d7f523ca.js": "/arbab/precache-manifest.148bf5ae2bfd3319025184b5d7f523ca.js",
+    "service-worker.js": "/arbab/service-worker.js",
+    "static/css/main.5504326f.chunk.css.map": "/arbab/static/css/main.5504326f.chunk.css.map",
+    "static/js/2.9c6d3b9d.chunk.js.LICENSE.txt": "/arbab/static/js/2.9c6d3b9d.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.12d46441.js",
+    "static/js/2.9c6d3b9d.chunk.js",
+    "static/css/main.5504326f.chunk.css",
+    "static/js/main.0721603f.chunk.js"
+  ]
+}
