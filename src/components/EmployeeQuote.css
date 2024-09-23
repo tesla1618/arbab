@@ -1,0 +1,70 @@
+/* Employee Quotes Section */
+.employee-quotes {
+    margin: 50px 0;
+    text-align: center;
+    animation: fadeIn 1s forwards; /* Apply fade-in animation */
+  }
+  
+  /* Fade-in animation */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0; /* Start transparent */
+      transform: translateY(20px); /* Optional: start slightly lower */
+    }
+    100% {
+      opacity: 1; /* Fully visible */
+      transform: translateY(0); /* Move to original position */
+    }
+  }
+  
+  .quotes-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .quote-item {
+    margin: 20px 0;
+    padding: 20px;
+    width: 60%;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, opacity 0.5s ease;
+    opacity: 0; /* Start hidden */
+    animation: slideIn 0.5s forwards; /* Slide-in animation */
+  }
+  
+  /* Slide-in animation */
+  @keyframes slideIn {
+    0% {
+      transform: translateY(20px); /* Start lower */
+      opacity: 0; /* Start transparent */
+    }
+    100% {
+      transform: translateY(0); /* Move to original position */
+      opacity: 1; /* Fully visible */
+    }
+  }
+  
+  .quote-item img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+  }
+  
+  blockquote {
+    font-size: 1.1rem;
+    font-style: italic;
+    color: #555;
+    margin: 0;
+  }
+  
+  .quote-author {
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  

@@ -1,0 +1,62 @@
+.clients-section {
+    padding: 50px;
+    background-color: #f9f9f9;
+    text-align: center;
+  }
+  
+  .clients-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  /* Container to hold the scrolling content */
+  .clients-container {
+    overflow: hidden; /* Hide the overflow to create scrolling effect */
+    width: 100%;
+    position: relative;
+  }
+  
+  /* The actual slider that holds the clients and moves */
+  .clients-slider {
+    display: flex;
+    justify-content: space-between;
+    animation: scroll 20s linear infinite; /* Scroll effect */
+  }
+  
+  .client-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 20px;
+    width: 150px;
+  }
+  
+  .client-image {
+    width: 100px; /* Adjust the size as per design */
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%; /* Optional: Make images circular */
+  }
+  
+  .client-name {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  /* Keyframes for smooth horizontal scrolling */
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+  /* Duplicate content scrolls right to left continuously */
+  .clients-slider:hover {
+    animation-play-state: paused; /* Optional: Pause scrolling on hover */
+  }
+  

@@ -1,0 +1,25 @@
+.repro-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full height of the viewport */
+    background-color: #f9f9f9; /* Light background color */
+  }
+  
+  .repro-title {
+    font-size: 3rem; /* Large font size */
+    color: #333; /* Dark text color */
+    text-align: center; /* Centered text */
+    animation: fadeIn 1s ease-in-out; /* Fade-in animation */
+  }
+  
+  /* Animation keyframes */
+  @keyframes fadeIn {
+    from {
+      opacity: 0; /* Start invisible */
+    }
+    to {
+      opacity: 1; /* Fully visible */
+    }
+  }
+  

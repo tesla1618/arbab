@@ -1,0 +1,40 @@
+.iso-container {
+  display: flex;
+  align-items: center;
+  padding: 40px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  opacity: 0; /* Start invisible */
+  animation: fadeIn 1s forwards; /* Animation to fade in */
+}
+
+.iso-image {
+  width: 300px; /* Adjust as necessary */
+  height: auto;
+  border-radius: 8px;
+  margin-right: 20px;
+}
+
+.iso-details {
+  max-width: 600px; /* Adjust as necessary */
+}
+
+.iso-title {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.iso-description {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  color: #555;
+}
+
+/* Animation keyframes */
+@keyframes fadeIn {
+  to {
+    opacity: 1; /* Fully visible */
+  }
+}

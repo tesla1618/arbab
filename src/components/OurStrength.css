@@ -1,0 +1,40 @@
+.strength-section {
+    padding: 50px;
+    background-color: #f9f9f9;
+    text-align: center;
+  }
+  
+  .strength-title {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #333;
+  }
+  
+  .strength-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .strength-item {
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    margin: 15px 0;
+    background-color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+  }
+  
+  .strength-icon {
+    margin-right: 10px;
+    color: #ff6f61; /* Change icon color as needed */
+  }
+  
+  .strength-item:hover {
+    transform: translateY(-5px);
+    cursor: pointer;
+  }
+  

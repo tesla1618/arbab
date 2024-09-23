@@ -1,0 +1,91 @@
+/* Overall section styling */
+.intro-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px;
+    background-color: #eaeaea; /* Light gray background similar to OurMotto section */
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    overflow: hidden;
+}
+
+/* Trigger visibility on scroll */
+.intro-section.active {
+    opacity: 1;
+}
+
+.intro-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+/* Text content styles */
+.intro-text {
+    flex: 1;
+    padding-right: 50px;
+    transform: translateY(-50px);
+    opacity: 0;
+    transition: transform 0.7s ease, opacity 0.7s ease;
+    text-align: left; /* Align text to the left */
+}
+
+.intro-section.active .intro-text {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.intro-title {
+    font-size: 2.0rem; /* Increased title font size */
+    margin-bottom: 20px;
+}
+
+.intro-description {
+    font-size: 1.2rem; /* Increased description font size */
+    line-height: 1.8; /* Increased line height for better readability */
+    color: #666;
+}
+
+/* Image container */
+.intro-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(100px);
+    opacity: 0;
+    transition: transform 0.7s ease, opacity 0.7s ease;
+}
+
+.intro-section.active .intro-image {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.intro-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive design */
+@media screen and (max-width: 960px) {
+    .intro-section {
+        flex-direction: column;
+        padding: 40px;
+    }
+
+    .intro-text {
+        padding-right: 0;
+        margin-bottom: 20px;
+        text-align: center; /* Center text on smaller screens */
+    }
+
+    .intro-image {
+        transform: translateX(0); /* No animation on small screens */
+        opacity: 1; /* Image appears immediately */
+    }
+}

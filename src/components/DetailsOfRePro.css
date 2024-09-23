@@ -1,0 +1,27 @@
+.details-repro-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full height of the viewport */
+    background-color: #f0f0f0; /* Light background color */
+  }
+  
+  .details-repro-title {
+    font-size: 3rem; /* Large font size */
+    color: #444; /* Darker text color */
+    text-align: center; /* Centered text */
+    animation: slideIn 1s ease-in-out; /* Slide-in animation */
+  }
+  
+  /* Animation keyframes */
+  @keyframes slideIn {
+    from {
+      transform: translateY(-50px); /* Start above the view */
+      opacity: 0; /* Start invisible */
+    }
+    to {
+      transform: translateY(0); /* End at original position */
+      opacity: 1; /* Fully visible */
+    }
+  }
+  
